@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -654,3 +655,661 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NestWebDigital — Websites for local businesses, built and maintained</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1B2A3D;
+    --navy-deep: #131E2C;
+    --cream: #F7F5F0;
+    --cream-panel: #F0ECE3;
+    --brass: #A8843D;
+    --brass-light: #C4A05E;
+    --charcoal: #2B2B2B;
+    --charcoal-soft: #5A5A54;
+    --line: #D9D3C4;
+    --serif: 'Source Serif 4', Georgia, serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    color: var(--charcoal);
+    background: var(--cream);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; }
+
+  img, svg { display: block; max-width: 100%; }
+
+  :focus-visible {
+    outline: 2px solid var(--brass);
+    outline-offset: 3px;
+  }
+
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 0 20px; }
+  }
+
+  /* ---------- Header ---------- */
+
+  header {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  header .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-family: var(--serif);
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--navy);
+    letter-spacing: 0.01em;
+    text-decoration: none;
+  }
+
+  .logo span { color: var(--brass); }
+
+  nav ul {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--charcoal-soft);
+    transition: color 0.15s ease;
+  }
+
+  nav a:hover { color: var(--navy); }
+
+  @media (max-width: 640px) {
+    nav ul { gap: 20px; }
+    nav a { font-size: 13px; }
+  }
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    padding: 96px 0 88px;
+  }
+
+  .hero-inner {
+    max-width: 640px;
+  }
+
+  .hero-eyebrow {
+    font-size: 15px;
+    color: var(--brass);
+    font-weight: 500;
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: 52px;
+    line-height: 1.14;
+    font-weight: 600;
+    color: var(--navy);
+    letter-spacing: -0.01em;
+  }
+
+  .hero-sub {
+    margin-top: 24px;
+    font-size: 18px;
+    color: var(--charcoal-soft);
+    max-width: 520px;
+  }
+
+  .hero-actions {
+    margin-top: 36px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 640px) {
+    h1 { font-size: 36px; }
+    .hero { padding: 56px 0 56px; }
+    .hero-sub { font-size: 16px; }
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+
+  .btn-primary {
+    background: var(--navy);
+    color: var(--cream);
+  }
+
+  .btn-primary:hover { background: var(--navy-deep); }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--navy);
+    border: 1px solid var(--navy);
+  }
+
+  .btn-secondary:hover { background: var(--navy); color: var(--cream); }
+
+  /* ---------- Proof strip ---------- */
+
+  .proof {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 22px 0;
+    background: var(--cream-panel);
+  }
+
+  .proof .wrap {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: var(--charcoal-soft);
+  }
+
+  .proof strong {
+    color: var(--navy);
+    font-weight: 600;
+  }
+
+  /* ---------- Section shared ---------- */
+
+  section { padding: 88px 0; }
+
+  @media (max-width: 640px) {
+    section { padding: 56px 0; }
+  }
+
+  .section-head {
+    max-width: 560px;
+    margin-bottom: 48px;
+  }
+
+  .section-head h2 {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.25;
+  }
+
+  .section-head p {
+    margin-top: 14px;
+    color: var(--charcoal-soft);
+    font-size: 16px;
+  }
+
+  /* ---------- How it works ---------- */
+
+  .steps {
+    border-top: 1px solid var(--line);
+  }
+
+  .step-row {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 24px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .step-row:first-of-type { padding-top: 0; }
+
+  .step-num {
+    font-family: var(--serif);
+    font-size: 28px;
+    color: var(--brass);
+    font-weight: 500;
+  }
+
+  .step-body h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .step-body p {
+    color: var(--charcoal-soft);
+    font-size: 15px;
+    max-width: 520px;
+  }
+
+  @media (max-width: 640px) {
+    .step-row { grid-template-columns: 1fr; gap: 6px; }
+  }
+
+  /* ---------- Pricing ---------- */
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  @media (max-width: 720px) {
+    .pricing-grid { grid-template-columns: 1fr; }
+  }
+
+  .plan {
+    background: var(--cream-panel);
+    border: 1px solid var(--line);
+    padding: 36px;
+    border-radius: 4px;
+  }
+
+  .plan.featured {
+    background: var(--navy);
+    color: var(--cream);
+    border-color: var(--navy);
+  }
+
+  .plan-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brass);
+    margin-bottom: 6px;
+  }
+
+  .plan.featured .plan-name { color: var(--brass-light); }
+
+  .plan-price {
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+
+  .plan.featured .plan-price { color: var(--cream); }
+
+  .plan-price small {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--charcoal-soft);
+  }
+
+  .plan.featured .plan-price small { color: #B8C2CE; }
+
+  .plan-desc {
+    margin: 14px 0 22px;
+    font-size: 14px;
+    color: var(--charcoal-soft);
+  }
+
+  .plan.featured .plan-desc { color: #C7CFD8; }
+
+  .plan ul {
+    list-style: none;
+    margin-bottom: 28px;
+  }
+
+  .plan li {
+    font-size: 14.5px;
+    padding: 9px 0;
+    border-top: 1px solid var(--line);
+    color: var(--charcoal);
+  }
+
+  .plan.featured li {
+    border-top-color: rgba(255,255,255,0.15);
+    color: #E6E9ED;
+  }
+
+  .plan li:first-child { border-top: none; }
+
+  .plan .btn { width: 100%; text-align: center; }
+
+  .plan.featured .btn-secondary {
+    border-color: var(--cream);
+    color: var(--cream);
+  }
+
+  .plan.featured .btn-secondary:hover {
+    background: var(--cream);
+    color: var(--navy);
+  }
+
+  /* ---------- Request change note ---------- */
+
+  .maintain {
+    background: var(--cream-panel);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .maintain .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+
+  @media (max-width: 720px) {
+    .maintain .wrap { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  .maintain h2 {
+    font-family: var(--serif);
+    font-size: 28px;
+    color: var(--navy);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .maintain p {
+    margin-top: 14px;
+    color: var(--charcoal-soft);
+    font-size: 15px;
+  }
+
+  .maintain-card {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 28px;
+  }
+
+  .maintain-card ol {
+    padding-left: 20px;
+    font-size: 14.5px;
+    color: var(--charcoal);
+  }
+
+  .maintain-card li { padding: 6px 0; }
+
+  /* ---------- Contact / booking ---------- */
+
+  .contact { border-top: 1px solid var(--line); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+  }
+
+  @media (max-width: 720px) {
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  .contact-block h3 {
+    font-family: var(--serif);
+    font-size: 20px;
+    color: var(--navy);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .contact-block p {
+    color: var(--charcoal-soft);
+    font-size: 14.5px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  input, textarea {
+    width: 100%;
+    font-family: var(--sans);
+    font-size: 15px;
+    padding: 11px 13px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: var(--cream);
+    color: var(--charcoal);
+  }
+
+  input:focus, textarea:focus {
+    border-color: var(--brass);
+  }
+
+  textarea { resize: vertical; min-height: 90px; }
+
+  form .btn { align-self: flex-start; margin-top: 6px; }
+
+  /* ---------- Footer ---------- */
+
+  footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13.5px;
+    color: var(--charcoal-soft);
+  }
+
+  @media (max-width: 640px) {
+    footer .wrap { flex-direction: column; gap: 10px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="logo">Nest<span>Web</span>Digital</a>
+    <nav>
+      <ul>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Websites for local businesses</p>
+      <h1>A website built for your business, kept up to date for you.</h1>
+      <p class="hero-sub">We design, build, and host your site — then handle every update after that. No contracts to read, no code to learn. You call, we change it.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Book a free consultation</a>
+        <a href="#pricing" class="btn btn-secondary">See pricing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="proof">
+  <div class="wrap">
+    <div><strong>2–5 days</strong> to launch</div>
+    <div><strong>Unlimited</strong> hosting included</div>
+    <div><strong>Updates every month</strong> at no extra charge</div>
+  </div>
+</div>
+
+<section id="how" class="steps-section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>How it works</h2>
+      <p>From first call to a live website, without you touching a line of code.</p>
+    </div>
+    <div class="steps">
+      <div class="step-row">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h3>We talk about your business</h3>
+          <p>A short call to understand what you do, who your customers are, and what you want people to find when they land on your site.</p>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h3>We design and build it</h3>
+          <p>You'll see a working draft of your actual site within a few days — not a mockup, a real page you can click through on your phone.</p>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h3>We publish it and keep it live</h3>
+          <p>Once you approve it, we host it under your domain. It stays online, secure, and working — that's on us, not you.</p>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <h3>You ask for changes whenever you need</h3>
+          <p>New menu, new hours, new photos — send us what changed and we update the site for you, included in your plan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Simple pricing</h2>
+      <p>Pay once, or spread it out with everything included. No setup fees either way.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="plan">
+        <div class="plan-name">One-time build</div>
+        <div class="plan-price">$450</div>
+        <p class="plan-desc">A good fit if you just need a site live and don't expect to change it often.</p>
+        <ul>
+          <li>Custom-built site, up to 5 pages</li>
+          <li>Free hosting for the first year</li>
+          <li>One round of revisions before launch</li>
+          <li>Additional changes billed separately</li>
+        </ul>
+        <a href="#contact" class="btn btn-secondary">Get started</a>
+      </div>
+      <div class="plan featured">
+        <div class="plan-name">Monthly care plan</div>
+        <div class="plan-price">$45<small> / month</small></div>
+        <p class="plan-desc">Best for businesses that update their info regularly, like menus, hours, or offers.</p>
+        <ul>
+          <li>Custom-built site, up to 5 pages</li>
+          <li>Hosting and domain upkeep included</li>
+          <li>One update request per month included</li>
+          <li>Cancel anytime, no lock-in contract</li>
+        </ul>
+        <a href="#contact" class="btn btn-secondary">Get started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="maintain">
+  <div class="wrap">
+    <div>
+      <h2>Already a client? Requesting a change is simple.</h2>
+      <p>You don't need to know what a repository is, or touch any code. Just tell us what should change, and we take it from there.</p>
+    </div>
+    <div class="maintain-card">
+      <ol>
+        <li>Send us the new text, menu, or photos — by email or the form below.</li>
+        <li>We make the change and send you a preview link.</li>
+        <li>You confirm it looks right, and we publish it live.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Get in touch</h2>
+      <p>Whether you're starting from nothing or already a client with a change to make.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-block">
+        <h3>Book a free consultation</h3>
+        <p>Pick a time that works for you and we'll walk through what a site for your business could look like — no pressure, no obligation.</p>
+        <a href="#" class="btn btn-primary">Open booking calendar</a>
+      </div>
+      <div class="contact-block">
+        <h3>Or send us a message</h3>
+        <p>New here, or need something updated on your existing site? Tell us what you need.</p>
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="business">Business name</label>
+            <input type="text" id="business" name="business">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">What do you need?</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>NestWebDigital</div>
+    <div>hello@nestwebdigital.com</div>
+  </div>
+</footer>
+
+</body>
+</html>
+>>>>>>> 8425cf80073b8cd029b1db0bb3f3cd700a223c18
